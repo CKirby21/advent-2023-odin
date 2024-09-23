@@ -8,6 +8,15 @@ import "core:strconv"
 
 run_day2_part2 :: proc() {
 
+	LineState :: enum{
+		GameIdWaiting, 
+		GameIdPopulating, 
+		NumberWaiting,
+		NumberPopulating,
+		ColorWaiting,
+		ColorPopulating
+	}
+
 	bag_map := map[string]int{
 		"red" = 12,
 		"green" = 13, 

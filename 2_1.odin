@@ -6,22 +6,16 @@ import "core:strings"
 import "core:testing"
 import "core:strconv"
 
-// Bag :: struct {
-// 	red_cubes_num: int,
-// 	green_cubes_num: int,
-// 	blue_cubes_num: int,
-// }
-
-LineState :: enum{
-	GameIdWaiting, 
-	GameIdPopulating, 
-	NumberWaiting,
-	NumberPopulating,
-	ColorWaiting,
-	ColorPopulating
-}
-
 run_day2_part1 :: proc() {
+
+	LineState :: enum{
+		GameIdWaiting, 
+		GameIdPopulating, 
+		NumberWaiting,
+		NumberPopulating,
+		ColorWaiting,
+		ColorPopulating
+	}
 
 	bag_map := map[string]int{
 		"red" = 12,
