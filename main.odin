@@ -9,6 +9,8 @@ main :: proc() {
 	// run_day3_part1()
 	// run_day3_part2()
 	// run_day4_part1()
-	run_day4_part2()
+	// run_day4_part2()
+	// run_day5_part1()
+	run_day5_part2()
 
 }
