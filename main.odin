@@ -7,8 +7,6 @@ main :: proc() {
 	
 	program := os.args[0]
 
-	fmt.println(os.args)
-
 	if len(os.args) != 3 {
 		fmt.printf("USAGE: %s DAY PART\n", program) 
 		return 
@@ -17,7 +15,7 @@ main :: proc() {
 	day := os.args[1]
 	part := os.args[2]
 
-	fmt.printf("Running day %s part %s\n\n", day, part) 
+	fmt.printf("Running day %s part %s...\n\n", day, part) 
 
 	switch day {
 	case "1":
@@ -68,6 +66,20 @@ main :: proc() {
 		}
 		else {
 			run_day7_part2()
+		}
+	case "8":
+		if part == "1" {
+			run_day8_part1()
+		}
+		else {
+			run_day8_part2()
+		}
+	case "9":
+		if part == "1" {
+			run_day9_part1()
+		}
+		else {
+			// run_day9_part2()
 		}
 	}
 
