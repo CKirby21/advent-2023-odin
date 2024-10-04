@@ -79,7 +79,7 @@ main :: proc() {
 			run_day9_part1()
 		}
 		else {
-			// run_day9_part2()
+			run_day9_part2()
 		}
 	}
 
