@@ -88,6 +88,13 @@ main :: proc() {
 		else {
 			run_day10_part2()
 		}
+	case "11":
+		if part == "1" {
+			run_day11_part1()
+		}
+		else {
+			run_day11_part2()
+		}
 	}
 
 }
